@@ -1,0 +1,31 @@
+{
+  "name": "js-regex-pl",
+  "version": "1.0.0",
+  "description": "JavaScript RegExp doesn't work with Unicode characters out of the box. This small package fixes this issue. This is \\p{L} equalent extracted from XRegExp.",
+  "main": "dist/js-regex-pl.js",
+  "scripts": {
+    "build": "npm run clean && npm run build:lib && npm run build:umd",
+    "build:lib": "BABEL_ENV=production babel src -d lib",
+    "build:umd": "NODE_ENV=production webpack --config webpack.config.prod.js -p",
+    "clean": "rimraf dist && rimraf lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yury-dymov/js-regex-pl.git"
+  },
+  "keywords": [
+    "javascript",
+    "regexp",
+    "unicode"
+  ],
+  "author": "Yury Dymov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yury-dymov/js-regex-pl/issues"
+  },
+  "homepage": "https://github.com/yury-dymov/js-regex-pl#readme",
+  "devDependencies": {
+    "rimraf": "^2.5.2",
+    "webpack": "^1.13.1"
+  }
+}
