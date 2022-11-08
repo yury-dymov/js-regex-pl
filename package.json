@@ -27,6 +27,6 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "rimraf": "^2.5.2",
-    "webpack": "^1.13.1"
+    "webpack": "^5.74.0"
   }
 }
